@@ -1,5 +1,16 @@
 import React, { useState } from 'react';
 
+interface Task {
+  task: string;
+  responsible: string;
+  dataResponsible: string;
+  completed: boolean;
+}
+
+interface StatusData {
+  [key: string]: Task[];
+}
+
 const GarmentOrderTracker = () => {
   // Sample data based on provided code
   const phases = [
@@ -16,10 +27,10 @@ const GarmentOrderTracker = () => {
   const [activePhase, setActivePhase] = useState("Pre-production");
   
   // State to track user changes to task status
-  const [taskStatuses, setTaskStatuses] = useState({});
+  const [taskStatuses, setTaskStatuses] = useState<Record<string, boolean>>({});
   
   // Sample detailed status data
-  const statusData = {
+  const statusData: StatusData = {
     "Costing": [
       { task: "Initial Data & Info Reception from Buyer", responsible: "Marketing & Merchandising", dataResponsible: "M&M", completed: true },
       { task: "SMV, Efficiency & Thread Consumption", responsible: "Industrial Engineering", dataResponsible: "M&M", completed: true },
@@ -68,7 +79,7 @@ const GarmentOrderTracker = () => {
   };
   
   // Function to toggle task completion status
-  const toggleTaskStatus = (phase, taskIndex) => {
+  const toggleTaskStatus = (phase: string, taskIndex: number) => {
     const taskKey = `${phase}-${taskIndex}`;
     
     setTaskStatuses(prev => {
@@ -85,7 +96,7 @@ const GarmentOrderTracker = () => {
   };
   
   // Get current status of a task (considering user changes)
-  const getTaskStatus = (phase, taskIndex) => {
+  const getTaskStatus = (phase: string, taskIndex: number) => {
     const taskKey = `${phase}-${taskIndex}`;
     // If user has toggled this task's status, use the toggled value
     // Otherwise use the default value from statusData
@@ -95,7 +106,7 @@ const GarmentOrderTracker = () => {
   };
   
   // Calculate progress percentage for each phase
-  const calculateProgress = (phase) => {
+  const calculateProgress = (phase: string) => {
     if (!statusData[phase]) return 0;
     const total = statusData[phase].length;
     
