@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div className="w-full py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-50 to-blue-100">
+    <div className="w-full py-8 sm:py-10 md:py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-50 to-blue-100">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">
           Find Your Ideal Website Template
@@ -13,20 +13,20 @@ const Hero = () => {
         
         <div className="flex flex-wrap items-center mb-4">
           {/* Counter digits with commas */}
-          <div className="flex items-center">
-            <span className="inline-flex items-center justify-center h-12 w-12 border border-gray-300 rounded bg-white text-xl font-semibold text-gray-700 mr-2">2</span>
-            <span className="text-xl font-semibold text-gray-700 mr-2">,</span>
-            <span className="inline-flex items-center justify-center h-12 w-12 border border-gray-300 rounded bg-white text-xl font-semibold text-gray-700 mr-2">3</span>
-            <span className="inline-flex items-center justify-center h-12 w-12 border border-gray-300 rounded bg-white text-xl font-semibold text-gray-700 mr-2">7</span>
-            <span className="inline-flex items-center justify-center h-12 w-12 border border-gray-300 rounded bg-white text-xl font-semibold text-gray-700 mr-2">0</span>
-            <span className="text-xl font-semibold text-gray-700 mr-2">,</span>
-            <span className="inline-flex items-center justify-center h-12 w-12 border border-gray-300 rounded bg-white text-xl font-semibold text-gray-700 mr-2">9</span>
-            <span className="inline-flex items-center justify-center h-12 w-12 border border-gray-300 rounded bg-white text-xl font-semibold text-gray-700 mr-2">6</span>
-            <span className="inline-flex items-center justify-center h-12 w-12 border border-gray-300 rounded bg-white text-xl font-semibold text-gray-700 mr-2">1</span>
+          <div className="flex flex-wrap items-center">
+            <span className="inline-flex items-center justify-center h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 border border-gray-300 rounded bg-white text-sm sm:text-lg md:text-xl font-semibold text-gray-700 mr-1 sm:mr-2">2</span>
+            <span className="text-sm sm:text-lg md:text-xl font-semibold text-gray-700 mr-1 sm:mr-2">,</span>
+            <span className="inline-flex items-center justify-center h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 border border-gray-300 rounded bg-white text-sm sm:text-lg md:text-xl font-semibold text-gray-700 mr-1 sm:mr-2">3</span>
+            <span className="inline-flex items-center justify-center h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 border border-gray-300 rounded bg-white text-sm sm:text-lg md:text-xl font-semibold text-gray-700 mr-1 sm:mr-2">7</span>
+            <span className="inline-flex items-center justify-center h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 border border-gray-300 rounded bg-white text-sm sm:text-lg md:text-xl font-semibold text-gray-700 mr-1 sm:mr-2">0</span>
+            <span className="text-sm sm:text-lg md:text-xl font-semibold text-gray-700 mr-1 sm:mr-2">,</span>
+            <span className="inline-flex items-center justify-center h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 border border-gray-300 rounded bg-white text-sm sm:text-lg md:text-xl font-semibold text-gray-700 mr-1 sm:mr-2">9</span>
+            <span className="inline-flex items-center justify-center h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 border border-gray-300 rounded bg-white text-sm sm:text-lg md:text-xl font-semibold text-gray-700 mr-1 sm:mr-2">6</span>
+            <span className="inline-flex items-center justify-center h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 border border-gray-300 rounded bg-white text-sm sm:text-lg md:text-xl font-semibold text-gray-700 mr-1 sm:mr-2">1</span>
           </div>
         </div>
         
-        <p className="text-lg font-medium text-gray-700">
+        <p className="text-base sm:text-lg font-medium text-gray-700">
           Websites Successfully Live
         </p>
         
