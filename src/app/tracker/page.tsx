@@ -1,4 +1,6 @@
 "use client"
+
+// Import directly from the component file rather than the index
 import GarmentOrderTracker from '@/components/GarmentOrderTracker';
 
 export default function TrackerPage() {
